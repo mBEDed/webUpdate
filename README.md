@@ -1,3 +1,7 @@
+---
+permalink: /views/layouts/main.html
+---
+
 # electronjs.org
 
 This is the source code for the Electron website at 
