@@ -4,8 +4,8 @@ nav:
   when: When
   what: What
   who: Who
-  apps: Why
-  userland: Who
+  watch: Watch
+  userland: Why
   releases: Which
   where: Where
 
