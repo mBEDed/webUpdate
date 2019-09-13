@@ -1,0 +1,28 @@
+---
+title: Page Not Found
+permalink: /404.html
+excerpt: ""
+---
+
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <style>
+    h1 {
+      font-size: 12em;
+      font-weight: 100;
+      margin: 0;
+    }
+  </style>
+  <body>
+    {% include header.html %}
+    <section class='page-section error-page'>
+      <div class='container-narrow text-center py-md-8'>
+        <!--<h1>404</h1>-->
+		<img alt="Header" src='{{ site.baseurl }}/images/404.png'><br>
+        <p class="lead">Great shot, Kid! That was one in a million.</p>
+		<p class="lead">Let's get you <a href="{{ site.baseurl }}/">back</a>.</p>
+      </div>
+    </section>
+  </body>
+</html>

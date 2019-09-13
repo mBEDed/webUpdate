@@ -1,0 +1,68 @@
+/* Userland List Cards */
+
+ul.report-list1 {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @include breakpoint(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.report-list1 > li {
+  display: block;
+  margin: 8px;
+  @include breakpoint(md) { flex-basis: 47%; }
+  @include breakpoint(lg) { flex-basis: 31%; }
+  @include breakpoint(xl) { flex-basis: 23%; }
+}
+
+.report-list1 .inner {
+  display: block;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f6f8f8;
+  border: 1px solid #F0F0F0;
+  border-radius: 5px;
+}
+
+.report-list1 .inner:hover  {
+  background-color: #fcfdfd;
+}
+
+.report-list1 img {
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+  margin-bottom: 0.3em;
+  transition: transform .32s;
+}
+
+.report-list1 .inner:hover img {
+  transform: scale(1.1);
+  transition-duration: .08s;
+}
+
+.report-list1 .inner:active img {
+  transform: scale(.92);
+  transition-duration: 0;
+}
+
+.report-list1 h3 {
+  font-size: 18px;
+  color: $main-link-color;
+  margin: 0;
+}
+
+.report-list1 p {
+  opacity: 0.8;
+  line-height: 1.4;
+  font-size: 90%;
+  text-align: left;
+  margin-top: 10px;
+  color: $text-gray-dark;
+}

@@ -1,0 +1,35 @@
+---
+title: What
+permalink: /what/
+layout: default
+excerpt: The technologies we use and the brands we are associated to.
+---
+
+
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1>We work with</h1>
+    <p class="lead mb-3">
+      The Brands and technologies we work with.
+    </p>
+  </div>
+</div>
+<section class='page-section'>
+  <div class='container'>
+    <ul class="report-list">
+    {% for thing in site.data.brands %}
+      {% for report in thing %}
+        {% if report.title %}
+          <li>
+            <a href="{{report.link}}" class="inner">
+              <img src="{{site.baseurl}}/images/brands/{{report.slug}}.svg" alt="{{report.title}} icon">
+              <h3>{{report.title}}</h3>
+              <p>{{report.description}}</p>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </div>
+</section>

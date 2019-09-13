@@ -5,9 +5,3 @@ npm-debug.log
 .jekyll-metadata
 images/crushed
 .env
-css/**/*.css
-yarn.lock
-cypress/videos/*
-/precompiled/
-.nyc_output
-coverage
