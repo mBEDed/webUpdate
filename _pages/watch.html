@@ -17,6 +17,7 @@ excerpt: Watch us in action.
 <section class='page-section'>
   <div class='container'>
     <ul class="report-list">
+	var _i = 0;
     {% for thing in site.images.insta %}
       {% for report in thing %}
         {% if report.title %}
@@ -25,7 +26,7 @@ excerpt: Watch us in action.
               <img src="{{site.baseurl}}/images/insta/_i.jpg">
             </a>
           </li>
-		  _i++
+		  _i++;
         {% endif %}
       {% endfor %}
     {% endfor %}
