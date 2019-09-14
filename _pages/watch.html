@@ -17,19 +17,19 @@ excerpt: Watch us in action.
 <section class='page-section'>
   <div class='container'>
     <ul class="report-list">
-	<script>
-    {% for thing in site.images.insta %}
+    {% for thing in site.data.brands %}
       {% for report in thing %}
         {% if report.title %}
           <li>
-            <a href="https://www.instagram.com/mBEDedSystems/" class="inner">
-              <img src="{{site.baseurl}}/images/insta/1.jpg">
+            <a href="{{report.link}}" class="inner">
+              <img src="{{site.baseurl}}/images/brands/{{report.slug}}.svg" alt="{{report.title}} icon">
+              <h3>{{report.title}}</h3>
+              <p>{{report.description}}</p>
             </a>
           </li>
         {% endif %}
       {% endfor %}
     {% endfor %}
-	</script>
     </ul>
   </div>
 </section>
