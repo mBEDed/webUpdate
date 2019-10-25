@@ -17,14 +17,12 @@ excerpt: Watch us in action.
 <section class='page-section'>
   <div class='container'>
     <ul class="report-list">
-    {% for thing in site.data.brands %}
+    {% for thing in site.data.insta %}
       {% for report in thing %}
         {% if report.title %}
           <li>
-            <a href="{{report.link}}" class="inner">
-              <img src="{{site.baseurl}}/images/brands/{{report.slug}}.svg" alt="{{report.title}} icon">
-              <h3>{{report.title}}</h3>
-              <p>{{report.description}}</p>
+            <a href="https://instagram.com/mBEDedSystems" class="inner">
+              <img src="{{site.baseurl}}/images/insta/{{report.slug}}.jpg" alt="{{report.title}} icon">
             </a>
           </li>
         {% endif %}
