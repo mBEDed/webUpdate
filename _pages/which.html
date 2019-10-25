@@ -1,0 +1,35 @@
+---
+title: Which
+permalink: /which/
+layout: default
+excerpt: Some of our creations.
+---
+
+
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1>The Products</h1>
+    <p class="lead mb-3">
+      Have a look at the products we created. Please share and support.
+    </p>
+  </div>
+</div>
+<section class='page-section'>
+  <div class='container'>
+    <ul class="report-list">
+    {% for thing in site.data.products %}
+      {% for report in thing %}
+        {% if report.title %}
+          <li>
+            <a href="{{report.link}}" class="inner">
+              <img src="{{site.baseurl}}/images/products/{{report.slug}}.jpg" alt="{{report.slug}} icon">
+			  <h3>{{report.title}}</h3>
+              <p>{{report.description}}</p>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </div>
+</section>
